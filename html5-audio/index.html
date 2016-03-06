@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    .playerwraper{
+        width:250px;
+        height:250px;
+        margin:100px auto;
+        background-image: url('src/b.jpg');
+        position: relative;
+    }
+    .maincontrol{
+        width:100%;
+        height:45%;
+        background-color: rgba(50,50,50,.5);
+        position: absolute;
+        bottom: 0;
+    }
+    #start-to-stop,#pre,#next{
+        height:35px;
+        width:35px;
+        line-height: 35px;
+        font-size: 35px;
+        color:white;
+        text-align: center;
+        position: absolute;
+    }
+    #pre{
+        left:12%;
+        top:55px;
+    }
+    #start-to-stop{
+        left:43%;
+        top:55px;
+    }
+    #next{
+        left:75%;
+        top:55px;
+    }
+    #volume{
+        height:10px;
+        width:200px;
+        margin:20px auto;
+    }
+    #timewraper{
+        width:100%;
+        overflow: hidden;
+        padding-bottom: 5px;
+        color:white;
+    }
+    #v-bar{
+        width:100%;
+        border:1px solid white;
+        position: relative;
+    }
+    #v-bar:hover{
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        cursor: pointer;
+    }
+    #v-bar #s-ball{
+        border:4px solid white;
+        border-radius: 50%;
+        position: absolute;
+        left:-4px;
+        top:-4px;  
+        transition:all .3s ease;     
+    }
+    .ball-shadow{
+         box-shadow: 0 0 10px rgba(250,0,0,1);
+    }
+    #cur-l{
+        float:left;
+    }
+    #length{
+        float:right;
+    }
+</style>
+
+
+
+
+<body>
+    <audio id="player">
+      <source src="src\B.mp3">
+        升级你的浏览器
+    </audio>
+    <div class="playerwraper">
+        <div class="maincontrol">
+            <div id="volume">
+                <div id="timewraper">
+                    <div id="cur-l">00:00</div>
+                    <div id="length">--:--</div>
+                </div>
+                <div id="v-bar">
+                    <div id="s-ball"></div>
+                </div>
+            </div>
+            <div id="pre"><i class="fa fa-backward"></i></div>
+            <div id="start-to-stop"><i class="fa  fa-play"></i></div>
+            <div id="next"><i class="fa fa-forward"></i></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    window.onload = function(){
+        var player = document.getElementById('player');
+        var pre = document.getElementById('pre');
+        var s_to_s = document.getElementById('start-to-stop');
+        var next = document.getElementById('next');
+        var v_bar = document.getElementById('v-bar');
+        var playing;
+
+        s_to_s.onclick = function(){
+            if(player.paused){
+                player.play();
+                playing = setInterval(getRefreshTime,1000);
+                document.getElementsByClassName('fa-play')[0].className = 'fa fa-pause';
+            }else{
+                player.pause();
+                document.getElementsByClassName('fa-pause')[0].className = 'fa fa-play';
+                clearInterval(playing);
+            }
+        }
+
+        v_bar.onclick = function(event){
+            var w_width = window.innerWidth;
+            var ex = event.clientX;
+            var p_x = Math.floor((w_width - 250)/2);
+            var x = ex - p_x-28;
+            document.getElementById('s-ball').style.left = x+'px';
+            var t_length = player.duration;
+            player.currentTime = parseInt(t_length*(x/190));
+            console.log(player.currentTime);
+
+        }
+        function getRefreshTime(){
+
+            if(!player.ended) {
+                var t_length = player.duration;
+                var curT = player.currentTime;
+                var curM = Math.floor(curT / 60);
+                var curS = Math.floor(curT % 60);
+                if (curM < 10) {
+                    curM = '0' + curM;
+                }
+                if (curS < 10) {
+                    curS = '0' + curS;
+                }
+                document.getElementById('cur-l').innerHTML = curM + ':' + curS;
+
+
+                var l_time = t_length - curT;
+                var lM = Math.floor(l_time / 60);
+                var lS = Math.floor(l_time % 60);
+                if (lM < 10) {
+                    lM = '0' + lM;
+                }
+                if (lS < 10) {
+                    lS = '0' + lS;
+                }
+                document.getElementById('length').innerHTML = lM + ':' + lS;
+
+                var ball = document.getElementById('s-ball');
+
+                var cur_locatin = Math.floor(curT / t_length * 200);
+
+                ball.style.left = cur_locatin - 4 + 'px';
+
+                 if(document.getElementById('s-ball').className == 'ball-shadow'){
+                    document.getElementById('s-ball').className = '';
+                 }else{
+                    document.getElementById('s-ball').className = 'ball-shadow';
+                 }
+            }else{
+                document.getElementsByClassName('fa-pause')[0].className = 'fa fa-play';
+        		clearInterval(playing);
+        		document.getElementById('s-ball').style.left = -4 + 'px';
+        		document.getElementById('length').innerHTML = '--:--';
+            }
+
+        }
+
+
+    }
+</script>
+</body>
+</html>
