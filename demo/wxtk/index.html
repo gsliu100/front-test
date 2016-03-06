@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>完形填空</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	 <link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<!--[if lt IE 9]>
+		<script>	
+			window.location.href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html";
+			alert('升级你的浏览器！！！！！');
+		</script>	
+	<![endif]-->
+	
+	<!-- jquery2.0 以上不再支持ie8 -->
+	<script src="http://cdn.bootcss.com/jquery/2.0.1/jquery.min.js"></script>
+	<script src="js/data.js"></script>
+</head>
+<body>
+	<section id="articleWrap">
+		<section id="topBanner">
+			<a class="topTools" href="#"><i class="fa fa-arrow-left"></i></a>
+			<a class="topTools" href="#"><i class="fa fa-paper-plane"></i></a>
+			<button id="check" onclick="">交卷</button>
+		</section>
+		<section id="paperContent">
+			<h4 class="tips"><i class="fa fa-book"></i>点击空格处，选中最恰当的单词。</h4>
+			<article>
+				<p>
+					It's the first question parents ask when their child is diagnosed with autism (自闭症). Will his future brothers or sisters have a higher risk of 1 <span class="youWord" id="youWord1">&nbsp;</span><span class="rightAnswer">developing</span> it, too? According to the largest study of siblings (兄弟姐妹) in families with autism, the answer is yes. Among 664 children who had at least one older sibling with the developmental disorder, the 2 <span class="youWord" id="youWord2">&nbsp;</span><span class="rightAnswer">average</span> risk of autism was nearly 19%, 3 <span class="youWord" id="youWord3">&nbsp;</span><span class="rightAnswer">dramatically</span> higher than previous sibling-recurrence estimates that were anywhere from 3% to 10%. Kids with more than one older autistic sibling had an even higher risk of the disorder: 32%. 
+				</p>
+				<p>
+					The 4 <span class="youWord" id="youWord4">&nbsp;</span><span class="rightAnswer">results</span> suggest that genes play a key role in autism risk. But they also hint that other environmental factors 5 <span class="youWord" id="youWord5">&nbsp;</span><span class="rightAnswer">shared</span> by siblings, like influences in the womb (子宫), may be important as well. 
+					On the 6 <span class="youWord" id="youWord6">&nbsp;</span><span class="rightAnswer">basis</span> of the findings, the researchers recommend that doctors closely 7 <span class="youWord" id="youWord7">&nbsp;</span><span class="rightAnswer">monitor</span> younger siblings of autistic children to pick up any early signs of the disorder, 8 <span class="youWord" id="youWord8">&nbsp;</span><span class="rightAnswer">including</span> an unusually large head or delayed language development and communication skills. Evidence suggests that early 9<span class="youWord" id="youWord9">&nbsp;</span><span class="rightAnswer">detection</span> and diagnosis of autism can help children take advantage of therapies that can treat some of its 10<span class="youWord" id="youWord10">&nbsp;</span><span class="rightAnswer">symptoms</span>
+				</p>
+			</article>
+		</section>
+		<section id="tags">
+			<ul>
+				<li><a href="#youWord1">1</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord2">2</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord3">3</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord4">4</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord5">5</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord6">6</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord7">7</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord8">8</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord9">9</a><i class="fa fa-sort-asc"></i></li>
+				<li><a href="#youWord10">10</a><i class="fa fa-sort-asc"></i></li>
+			</ul>
+		</section>
+		<section id="allWordsTable">
+			<table>
+				<tr>
+					<td>common</td>
+					<td>results</td>
+					<td>consequently</td>
+				</tr>
+				<tr>
+					<td>basis</td>
+					<td>detection</td>
+					<td>monitor</td>
+				</tr>
+				<tr>
+					<td>symbols</td>
+					<td>average</td>
+					<td>dramatically</td>
+				</tr>
+				<tr>
+					<td>symptoms</td>
+					<td>reason</td>
+					<td>distributed</td>
+				</tr>
+				<tr>
+					<td>including</td>
+					<td>developing</td>
+					<td>shared</td>
+				</tr>
+			</table>
+			<div id="explainContent">
+				<h5>解析：</h5>
+				<p></p>
+			</div>
+		</section>
+
+
+		<section id="checkResult">
+			<div class="resultPanel">
+				<header><h3 class="resultHeader">成绩报告</h3></header>
+				<section>
+					<h2 class="resultPrecent">30%</h2>
+					<p>正确率</p>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+				</section>
+				<footer>
+					<div class="buttonWrap">
+						<button class="checkExplain">查解析</button>
+						<button class="returnBack">回列表</button>
+					</div>
+				</footer>
+
+			</div>
+		</section>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>

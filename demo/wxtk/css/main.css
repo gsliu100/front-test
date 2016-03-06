@@ -1,0 +1,257 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+#articleWrap{
+	max-width:720px;
+	min-height:100%;
+	// background-color:#a1a1a1;
+	margin:0 auto;
+	position: relative;
+}
+#topBanner{
+	width:100%;
+	height:56px;
+	// line-height: 56px;
+	padding-left:20px;
+	background-color:#f1f1f1;
+	border-bottom: 1px solid #DFDEDE;
+}
+#topBanner a{
+	color:#666;
+	text-decoration: none;
+}
+#topBanner a.topTools{
+	display: inline-block;
+	margin-top:10px;
+	font-size: 24px;
+	padding-right:30px;
+}
+#topBanner button#check{
+	float:right;
+	font-size: 16px;
+	font-weight:bold;
+	color:#666;
+	border:none;
+	margin-right:20px;
+	margin-top:12px;
+	background-color: white;
+	padding:8px;
+	border:1px solid #DFDEDE;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* */
+#paperContent{
+	width:100%;
+	padding-left: 20px;
+	padding-top:20px;
+	max-height: 400px;
+	overflow: auto;
+	box-shadow:-10px -2px 10px 1px #aaa inset;
+}
+#paperContent .tips{
+	color:#666;
+}
+#paperContent .tips i{
+	font-size: 20px;
+	padding-right: 10px;
+}
+#paperContent article{
+	margin-top:30px;
+}
+#paperContent article p{
+	color:#666;
+	line-height:36px;
+	text-indent:24px;
+}
+#paperContent article p .youWord{
+	display: inline-block;
+	min-width:100px;
+	text-indent: 0;
+	text-align: center;
+	color:#2BCDDF;
+	cursor: pointer;
+	border-bottom: 1px solid #D7D7D7;
+}
+#paperContent article p .youWord.error{
+	text-decoration: line-through;
+	color:#F44336;
+	border-radius: 5px 5px 0 0;
+	background-color:#f1f1f1;
+}
+#paperContent article p .youWord.errorNull{
+	text-decoration: line-through;
+	color:#F44336;
+}
+#paperContent article p .rightAnswer{
+	display: none;
+	padding:5px;
+	background-color: #54bb98;
+	color:white;
+}
+#paperContent article p .currentChoise.youWord{
+	background-color:#2BCDDF;
+	color:white;
+	border-radius: 5px 5px 0 0;
+}
+
+
+
+
+
+/* */
+#tags{
+	width:100%;
+	margin-top:50px;
+}
+#tags ul{
+	list-style: none;
+	text-align:center;
+}
+#tags ul li{
+	position: relative;
+	display: inline-block;
+	width:30px;
+	height:30px;
+	margin-right: 5px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	background-color:#aaa;
+}
+#tags ul li.choised{
+	background-color:#54bb98;
+}
+#tags ul li.error{
+	background-color:#F44336;
+}
+#tags ul li i{
+	display: none;
+	width:8px;
+	position:absolute;
+	top:100%;
+	left:50%;
+	color:#666;
+	margin-left:-4px;
+}
+#tags ul li a{
+	text-decoration: none;
+	color:white;
+	display: inline-block;
+	width:100%;
+}
+
+
+/* */
+#allWordsTable{
+	margin-top:20px;
+	width:100%;
+}
+#allWordsTable table{
+	width:100%;
+	border-collapse: collapse;
+	border:2px solid #666;
+}
+#allWordsTable table tr td{
+	padding:10px;
+	color:#666;
+	text-align: center;
+	border:1px solid #aaa;
+	cursor: pointer;
+}
+#allWordsTable table tr td.overColor{
+	color:#54bb98;
+}
+#allWordsTable table tr td.textDelete{
+	text-decoration:line-through;
+}
+#allWordsTable #explainContent{
+	display: none;
+	color:#666;
+	margin-top:20px;
+	padding-top: 10px;
+	border-top:1px solid #aeaeae;
+}
+
+
+#checkResult{
+	width:100%;
+	height:100%;
+	background-color: rgba(150,150,150,.7);
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+}
+#checkResult .resultPanel{
+	background-color: white;
+	width:95%;
+	margin:20px auto;
+}
+#checkResult .resultPanel .resultHeader{
+	text-align: center;
+	color:#666;
+	padding:20px;
+	border-bottom: 1px solid #ECECEC;
+}
+#checkResult .resultPanel .resultPrecent{
+	color:#54bb98;
+	margin-top:20px;
+	text-align: center;
+}
+#checkResult .resultPanel p{
+	color:#666;
+	margin-top:5px;
+	text-align: center;
+	font-size: 14px;
+}
+#checkResult .resultPanel ul{
+	list-style: none;
+	width:70%;
+	position: relative;
+	margin-top:20px;
+	left:50%;
+	float: left;
+}
+#checkResult .resultPanel ul li{
+	position: relative;
+	color:#54bb98;
+	left:-50%;
+	float:left;
+	text-align: center;
+	padding:20px 0 20px 0;
+	width:20%;
+}
+#checkResult .resultPanel ul li.wrong{
+	color:#F44336;
+}
+#checkResult .resultPanel  footer{
+	clear:both;
+	border-top: 1px solid #ECECEC;
+	padding-bottom: 20px;
+}
+#checkResult .resultPanel  footer .buttonWrap{
+	width:80%;
+	margin:20px auto;
+}
+#checkResult .resultPanel  footer button{
+	border:1px solid #54bb98;
+	border-radius: 20px;
+	padding:10px 0 10px 0;
+	color:#54bb98;
+	background-color: white;
+	font-size: 16px;
+	font-weight: 600;
+	width:44%;
+}
+#checkResult .resultPanel  footer button:first-child{
+	margin-right:5%;
+}
+#checkResult .resultPanel  footer button:last-child{
+	margin-left:5%;
+}
