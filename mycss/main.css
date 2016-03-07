@@ -1,0 +1,30 @@
+#myContent{
+	margin-top:0;
+	padding-left:0;
+}
+
+#myContent #myTag{
+	padding-bottom: 10px;
+	border-bottom: 2px solid #F44336;
+}
+
+
+
+#listWrap{
+
+}
+#myList{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+#myList li{
+	float:left;
+	width:150px;
+	height:150px;
+	overflow: hidden;
+	margin:0 8px 10px 8px;
+}
+#myList li img{
+	max-width: 100%;
+}
