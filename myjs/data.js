@@ -5,13 +5,13 @@ mydata.factory('oriData',function(){
 		{
 			demoName:'html5-audio',
 			indexDirectName:"html5-audio",
-			imageName:"html5-audio.png"
+			imageName:"html5-audio.PNG"
 
 		},
 		{
 			demoName:'wxtk',
 			indexDirectName:"wxtk",
-			imageName:"wxtk.png"
+			imageName:"wxtk.PNG"
 		}
 	]
 });
