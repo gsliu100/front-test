@@ -12,6 +12,11 @@ mydata.factory('oriData',function(){
 			demoName:'wxtk',
 			indexDirectName:"wxtk",
 			imageName:"wxtk.PNG"
+		},
+		{
+			demoName:'image-show-box',
+			indexDirectName:"image-show-box",
+			imageName:"image-show-box.PNG"
 		}
 	]
 });

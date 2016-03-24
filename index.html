@@ -37,7 +37,7 @@
           <div id="listWrap" ng-app="myapp">
             <ul id="myList" ng-controller="loadDemo">
               <li ng-repeat="oneDemo in demos">
-                <a href="demo/{{oneDemo.indexDirectName}}/"><img src="myimages/{{oneDemo.imageName}}" alt=""></a>
+                <a href="demo/{{oneDemo.indexDirectName}}/"><img src="myimages/{{oneDemo.imageName}}" alt="{{oneDemo.demoName}}"></a>
               </li>
             </ul>
           </div>  
@@ -45,7 +45,7 @@
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/gsliu100">gsliu100</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages</p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>

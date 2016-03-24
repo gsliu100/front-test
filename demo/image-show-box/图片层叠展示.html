@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片层叠展示</title>
+<style type="text/css">
+*{
+	padding:0px;
+	margin:0px;
+}
+.main{
+	width:900px;
+	height:230px;
+	margin:50px auto;
+	border:#CCC 1px solid;
+	position:relative;
+}
+.stake{
+	position:absolute;
+	top:35px;
+	height:160px;
+	width:160px;
+}
+.single{
+	position:absolute;
+	top:35px;
+	height:160px;
+	width:160px;
+}
+.single img{
+	width:150px;
+	height:150px;
+	border:#FFF 4px solid;
+	box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-webkit-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-o-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-ms-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	transition:all 200ms ease;
+	-webkit-transition:all 200ms ease;
+	
+}
+.single img:hover{
+	transform:scale(1.1,1.1);
+	-webkit-transform:scale(1.1,1.1);
+}
+.stake ul li .img1{
+	position:absolute;
+	left:8px;
+	top:8px;
+	width:150px;
+	height:150px;
+	border:#FFF 4px solid;
+	box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-webkit-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-o-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-ms-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	
+	transition:all 200ms  ease-in-out;
+
+}
+.stake ul li .img2{
+	position:absolute;
+	left:5px;
+	top:5px;
+	width:150px;
+	height:150px;
+	border:#FFF 4px solid;
+	box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-webkit-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-o-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-ms-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	transition:all 200ms  ease-in-out;
+	-webkit-transition:all 200ms  ease-in-out;
+}
+.stake ul li .img3{
+	position:absolute;
+	left:2px;
+	top:2px;
+	width:150px;
+	height:150px;
+	border:#FFF 4px solid;
+	box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-webkit-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-moz-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-o-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	-ms-box-shadow:2px 2px 8px rgba(0,0,0,0.5);
+	
+	transition:all 200ms  ease-in-out;
+	-webkit-transition:all 200ms  ease-in-out;
+}
+.stake ul:hover li .img1{
+	transform:rotate(15deg) translateX(50px);
+	-webkit-transform:rotate(15deg) translateX(50px) ;
+	-moz-transform:rotate(15deg) translateX(20px);
+	-ms-transform:rotate(15deg) translateX(20px);
+	-o-transform:rotate(15deg) translateX(20px);
+}
+.stake ul:hover li .img3{
+	transform:rotate(-15deg) translateX(-50px);
+	-webkit-transform:rotate(-15deg) translateX(-50px);
+	-moz-transform:rotate(-15deg) translateX(-20px);
+	-ms-transform:rotate(-15deg) translateX(-20px);
+	-o-transform:rotate(-15deg) translateX(-20px);
+}
+ul{
+	list-style:none;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+    	<div class="stake" style="right:100px;">
+        	<ul>
+            	<li><a href="#"><img src="图片层叠展开/1.jpg" class="img1"/></a>
+                <li><a href="#"><img src="图片层叠展开/2.JPG" class="img2"/></a>
+                <li><a href="#"><img src="图片层叠展开/3.jpg" class="img3"/></a>
+            </ul>
+        </div>
+        <div class="stake" style="right:400px;">
+        	<ul>
+            	<li><a href="#"><img src="图片层叠展开/4.jpg" class="img1"/></a>
+                <li><a href="#"><img src="图片层叠展开/5.JPG" class="img2"/></a>
+                <li><a href="#"><img src="图片层叠展开/6.jpg" class="img3"/></a>
+            </ul>        
+        </div>
+        <div class="single" style="right:700px;">
+        	<a href="#"><img src="图片层叠展开/1.jpg" /></a>
+        </div>
+    </div>
+</body>
+</html>
