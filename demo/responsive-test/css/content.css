@@ -1,0 +1,135 @@
+.oneContentDetail{
+	margin-top:-1px;
+	border-top:5px solid #009688;
+}
+.contentNavWrap{
+	width:100%;
+	height:32px;
+	position: absolute;
+	line-height: 32px;
+	background-color: #f2f2f2;
+}
+.contentNavWrap .contentNav{
+	max-width:1000px;
+	height:100%;
+	margin:0 auto;
+	font-size: 13px;
+	color:#999;
+}
+.contentNavWrap .contentNav span a{
+	text-decoration: none;
+	color:#009688;
+}
+
+
+
+.contentDetailWrap{
+	width:100%;
+}
+.contentDetailWrap .contentRightNavWrap{
+	max-width:1000px;
+
+/*	border-left:1px solid #999;
+	border-right:1px solid #999;*/
+	box-shadow: 0 0 5px 1px #999;
+	height:100%;
+	margin:0 auto;
+	margin-top:20px;
+	overflow: hidden;
+}
+.contentDetailWrap .contentRightNavWrap .contentDetail{
+	/*margin-top:20px;*/
+	padding:30px 1% 0 1%;
+	width:70%;
+	height:100%;
+	float:left;
+}
+.contentDetailWrap .contentRightNavWrap .rightNav{
+	width:28%;
+	height:100%;
+	height:100%;
+	float: left;
+	padding-top:30px;
+	background-color:#009688;
+
+}
+#oneContentTitle h3{
+	padding-bottom:10px;
+	/*background-color:#00BCD4;*/
+	color:#666; 
+	font-size: 1.2em;
+	font-weight:500;
+
+}
+.shareWrap{
+	padding:5px 0 10px 0;
+	border-bottom: 1px dotted #d1d1d1;
+	margin-bottom: 10px;
+}
+.shareWrap #postTime{
+	color:#999;
+	font-size: 12px;
+}
+.shareWrap .jiathis_style{
+	display: inline-block;
+	padding-right: 10px;
+	float:right;
+}
+#contentBody{
+	margin-top:50px;
+}
+#contentBody p{
+	text-indent: 32px;
+	font-size: 14px;
+	color:#666;
+	line-height: 26px;
+}
+
+
+.rightNav h4{
+	color:white;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-left:5px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid white;
+}
+.rightNav h4#rightNavNotify{
+	margin-top:50px;
+}
+.rightNav ul{
+	color:#6880FF;
+	padding-left:12px;
+	padding-right:12px;
+	list-style-position: inside;
+}
+.rightNav ul#rightNavList{
+	/*border-bottom: 1px solid white*/
+}
+.rightNav ul li{
+	margin-bottom: 10px;
+}
+.rightNav ul li a{
+	text-decoration: none;
+	color:#fafafa;
+	font-size: 12px;
+}
+.rightNav ul li a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width:780px){
+	.contentDetailWrap .contentRightNavWrap .contentDetail{
+		width:100%;
+	}
+	.contentDetailWrap .contentRightNavWrap .rightNav{
+		display: none;
+	}
+	#contentBody p{
+		max-width:520px;
+		margin:0 auto;
+	}
+}

@@ -17,6 +17,11 @@ mydata.factory('oriData',function(){
 			demoName:'image-show-box',
 			indexDirectName:"image-show-box",
 			imageName:"image-show-box.PNG"
+		},
+		{
+			demoName:'responsive-test',
+			indexDirectName:"responsive-test",
+			imageName:"responsive-test.PNG"
 		}
 	]
 });

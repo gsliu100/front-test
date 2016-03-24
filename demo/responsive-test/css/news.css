@@ -1,0 +1,231 @@
+.news{
+	width:100%;
+	margin-top:40px;
+}
+.newsWrap{
+	max-width:1000px;
+	overflow: hidden;
+	margin:0 auto;
+}
+.newsWrap .newsDetail{
+	height:100%;
+	width:100%;
+	border-left:10px solid white;
+	border-right:10px solid white;
+	/*background-color:#999;*/
+}
+.newsWrap .newsDetail h4{
+	font-size: 20px;
+	font-weight: normal;
+	color:#333;
+	border-bottom: 2px solid #0E5792;
+	padding-bottom: 10px;
+}
+.newsWrap .newsDetail h4 span{
+	display: inline-block;
+	float:right;
+	margin-top:15px;
+	margin-right:20px;
+	font-size: 10px;
+}
+.newsWrap .newsDetail h4 span a{
+	color:#999;
+	text-decoration: none;
+}
+.newsWrap .newsDetail h4 span a:hover{
+	color:#0E5792;
+}
+.newsWrap .newsDetail .newsListWrap{
+	margin-top:10px;
+}
+.newsWrap .newsDetail .newsListWrap .new{
+	width:29%;
+	height:100%;
+	padding:0 2% 0 2%;
+	float: left;
+	border-right:1px solid #d3d3d3;
+}
+
+.newsWrap .newsDetail .newsListWrap .new .newImage{
+	height:120px;
+	width:100%;
+	overflow: hidden;
+}
+.newsWrap .newsDetail .newsListWrap .new .newImage img{
+	max-width:100%;
+}
+.newsWrap .newsDetail .newsListWrap .new .newAbstruct{
+	height:120px;
+	overflow: hidden;
+}
+.newsWrap .newsDetail .newsListWrap .new .newAbstruct h5{
+	font-size: 16px;
+	margin:5px 0 5px 0;
+	font-weight: normal;
+}
+.newsWrap .newsDetail .newsListWrap .new .newAbstruct h5 a{
+	text-decoration: none;
+	color:#333;
+}
+.newsWrap .newsDetail .newsListWrap .new .newAbstruct h5 a:hover{
+	color:#0E5792;
+}
+.newsWrap .newsDetail .newsListWrap .new .newAbstruct p{
+	font-size: 12px;
+	padding-bottom: 5px;
+	color:#666;
+}
+
+.newsWrap .newsDetail .newsListWrap .new ul{
+	list-style: none;
+}
+.newsWrap .newsDetail .newsListWrap .new ul li{
+	height:40px;
+	padding-top:5px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #d3d3d3;
+}
+.newsWrap .newsDetail .newsListWrap .new ul li a{
+	color:#333;
+	font-size: 14px;
+	text-decoration: none;
+} 
+.newsWrap .newsDetail .newsListWrap .new ul li a:hover{
+	color:#0E5792;
+}
+.newsWrap .newsDetail .newsListWrap .new.newTow{
+	/*background-color:red;*/
+}
+.newsWrap .newsDetail .newsListWrap .new.newsList{
+	/*background-color:blue;*/
+}
+.newsWrap .newsDetail:last-child{
+	clear:both;
+}
+.part2{
+	width:47%;
+	float:left;
+	margin-top:40px;
+}
+.part2.notify{
+	padding-right:2%;
+	border-right:1px solid #d3d3d3;
+}
+.part2.academic{
+	padding-left:2%;
+}
+.part2 ul{
+	list-style: none;
+}
+.part2 ul li{
+	height:30px;
+	line-height: 30px;
+	padding:5px;
+	font-size: 14px;
+	border-bottom: 1px dotted #d3d3d3;
+}
+.part2 ul li a{
+	display: inline-block;
+	width:80%;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-decoration: none;
+	color:#333;
+}
+.part2 ul li a:hover{
+	color:#0E5792;
+}
+.part2 ul li span{
+	display: inline-block;
+	float:right;
+	color:#999;
+}
+.part2.academic ul li a{
+	width:75%;
+}
+/*.part2.academic ul li span{
+	margin-right:15px;
+}*/
+.academic .academicOne{
+	height:115px;
+	overflow: hidden;
+	/*background-color: red;*/
+}
+.academic .academicOne a{
+	display: inline-block;
+	margin-top:5px;
+	float:left;
+	width:50%;
+}
+.academic .academicOne img{
+	max-width:100%;
+}
+.academic .academicOne .academicOneDetail{
+	float:left;
+	width:43%;
+	padding-top:5px;
+	padding-left:2%;
+	padding-right:5%;
+	height:100%;
+}
+.academic .academicOne .academicOneDetail h5{
+	font-weight: normal;
+	font-size: 16px;
+}
+.academic .academicOne .academicOneDetail p{
+	line-height: 20px;
+	padding-top:5px;
+	font-size: 12px;
+	color:#333;
+}
+
+
+
+
+
+@media screen and (max-width:940px){
+	.newsWrap .newsDetail{
+		border-left:0px solid white;
+		border-right:0px solid white;
+	}
+}
+@media screen and (max-width:780px){
+	.newsWrap .newsDetail .newsListWrap .new{
+		width:46%;
+		/*float: none;*/
+		border-right: 0px solid red;
+		border-bottom: 1px solid #0E5792;
+		padding-bottom: 20px;
+	}
+	.newsWrap .newsDetail .newsListWrap .new:last-child{
+		width:100%;
+	}
+	.part2 ul li span{
+		display: none;
+	}
+	
+}
+@media screen and (max-width:520px){
+	.newsWrap .newsDetail .newsListWrap .new{
+		width:100%;
+	}
+	.part2 ul li span{
+		display: inline-block;
+	}
+	.part2{
+		width:100%;
+		clear:both;
+	}
+	.part2:first-child{
+		border-right:0 soli red;
+	}
+	.part2:last-child{
+		padding-left:0;
+	}
+}
+@media screen and (max-width:450px){
+	.part2 ul li span{
+		display: none;
+	}
+}

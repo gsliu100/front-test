@@ -1,0 +1,286 @@
+*{
+	padding:0;
+	margin:0;
+}
+::selection{
+	background-color:#00BCD4;
+	color:white;
+}
+/*去掉ie中图片默认的border*/
+img{
+	border:0;
+}
+body{
+	font-family: 'Microsoft Yahei',"Lucida Grande", "Tahoma","Arial", "Helvetica", "sans-serif";
+	transition:all .5s ease-in-out;
+}
+.mobileTog{
+	display:none;
+}
+
+
+
+
+.header .topNav{
+	background-color:#0065b3;
+}
+.subNavWrap{
+	height:32px;
+	width:100%;
+	background-color:#0E5792;
+}
+.subNavWrap .subNav{
+	max-width:1000px;
+	/*background-color: blue;*/
+	height:32px;
+	line-height: 32px;
+	margin:0 auto;
+}
+.subNavWrap .subNav .rightSubNav ul{
+	list-style: none;
+}
+.subNavWrap .subNav .rightSubNav ul li{
+	float:right;
+	padding:0 10px 0 10px;
+	/*border-right: 1px solid white;*/
+	/*margin:2px 0 2px 0;*/
+}
+.subNavWrap .subNav .rightSubNav ul li a{
+	color:#f1f1f1;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+
+.mobileNav{
+	display: none;
+	background-color: white;
+}
+.mobileNav>ul.mobileMainNav{
+	margin-top:5px;
+	list-style: none;
+}
+.mobileNav>ul.mobileMainNav>li{
+	
+	border-bottom: 1px solid #e2e2e2;
+}
+.mobileNav>ul.mobileMainNav>li>a{
+	display: inline-block;
+	padding:10px;
+	padding-right:0;
+	padding-right:0;
+	padding-left:30px;
+	width:100%;
+	text-decoration: none;
+	font-size: 15px;
+	color:#333;
+}
+.mobileNav>ul.mobileMainNav>li>a>i{
+	padding-left:10px;
+}
+.mobileNav>ul.mobileMainNav>li>ul{
+	list-style: none;
+	padding-left:40px;
+	display: none;
+}
+.mobileNav>ul.mobileMainNav>li>ul>li{
+	padding:2px;
+	border-bottom: 1px solid #e2e2e2;
+}
+.mobileNav>ul.mobileMainNav>li>ul>li>a{
+	display: inline-block;
+	width:100%;
+	text-decoration: none;
+	color:#333;
+	font-size: 12px;
+}
+.mobileNav>ul.mobileMainNav>li>ul>li>a:hover{
+	color:#0065b3;
+}
+.mobileNav>ul.mobileMainNav>li:hover>a{
+	background-color: #0065b3;
+	color:white;
+}
+
+
+
+
+.mobileNav>ul.mobileSubNav{
+	list-style: none;
+	text-align: center;
+	background-color: #d1d1d1;
+}
+.mobileNav>ul.mobileSubNav>li{
+	display: inline-block;
+	padding:5px;
+}
+.mobileNav>ul.mobileSubNav>li>a{
+	text-decoration: none;
+	color:#333;
+}
+.mobileNav .mobileSearch{
+	margin-top:5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d1d1d1;
+}
+.mobileNav .mobileSearch form{
+	text-align: center;
+}
+.mobileNav .mobileSearch input#searchInput,.mobileNav .mobileSearch button#searchSubmit{
+	padding:4px;
+	outline:none;
+	border:1px solid #d1d1d1;
+	border-radius: 2px;
+	color:#666;
+}
+
+
+
+.schoolLogo{
+	max-width:1000px;
+	height:79px;
+	/*background-color:red;*/
+	margin:0 auto;
+	position:relative;
+}
+.schoolLogo .logo{
+	display:inline-block;
+	/*background-color:blue;*/
+}
+.schoolLogo .search{
+	position:absolute;
+	top:0;
+	right:10px;
+	margin-top:28px;
+	/*background-color:blue;*/
+}
+.schoolLogo .search input#searchInput,.schoolLogo .search button#searchSubmit{
+	padding:4px;
+	outline:none;
+	border:none;
+	border-radius: 2px;
+	color:#666;
+}
+.schoolLogo .search button#searchSubmit{
+	background-color: #009688;
+	color: white;
+}
+
+
+
+.bigNav{
+
+}
+.mainNavWrap{
+	padding-top:20px;
+	/*background-color: red;*/
+}
+.mainNavWrap .mainNav{
+	max-width:1000px;
+	min-width:720px;
+	height:42px;
+	line-height: 42px;
+	margin:0 auto;
+	border-bottom:1px solid #e2e2e2;
+}
+.mainNavWrap .mainNav > ul{
+	list-style: none;
+	text-align: center;
+}
+.mainNavWrap .mainNav > ul >li{
+	display: inline;
+}
+.mainNavWrap .mainNav > ul >li{
+/*	transition:all .5s ease-in-out;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;*/
+	position: relative;
+	display: inline-block;
+	padding:0 12px 0 12px;
+}
+
+.mainNavWrap .mainNav > ul >li >a {
+	display: inline-block;
+	width:100%;
+	color:#525252;
+	text-decoration: none;
+}
+.mainNavWrap .mainNav > ul >li >a>i{
+	padding-left:5px;
+}
+.mainNavWrap .mainNav > ul >li:hover{
+	background-color: #0065bb;
+}
+.mainNavWrap .mainNav > ul >li:hover >a {
+	color:white;
+}
+.mainNavWrap .mainNav > ul >li>ul{
+	display: none;
+	list-style: none;
+	position: absolute;
+	z-index: 999999;
+	top:100%;
+	left:0;
+	width:200%;
+	background-color:#0065bb;
+	text-align: left;
+}
+.mainNavWrap .mainNav > ul >li>ul>li{
+	padding-left:15px;
+}
+.mainNavWrap .mainNav > ul >li>ul>li:hover{
+	background-color:#0E5792;
+}
+.mainNavWrap .mainNav > ul >li>ul>li>a{
+	display: inline-block;
+	width:100%;
+	text-decoration: none;
+	font-size: 14px;
+	color:white;
+}
+
+
+
+@media screen and (max-width:940px){
+	.mainNavWrap .mainNav > ul >li{
+		padding:0 4px 0 4px;
+	}
+	.mainNavWrap .mainNav > ul >li >a>i{
+		padding-left:1px;
+	}
+	.mainNavWrap .mainNav > ul >li >a {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:780px){
+	.subNavWrap .subNav .rightSubNav{
+		display: none;
+	}
+	.schoolLogo .search{
+		display: none;
+	}
+	.schoolLogo .logo{
+		display: block;
+		text-align: center;
+	}
+	.bigNav{
+		display: none;
+	}
+	.mobileTog{
+		display:block;
+	}
+	.mobileTog a{
+		display: inline-block;
+		margin-left:20px;
+		font-size: 1.5em;
+		color:white;
+		/*background-color: red;*/
+	}
+}
+
+
+
+

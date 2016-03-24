@@ -1,0 +1,56 @@
+#listBody{
+	margin-top:10px;
+}
+#listBody ul{
+	list-style: none;
+}
+#listBody ul li{
+	margin-top:15px;
+}
+#listBody ul li .listNewTime{
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+#listBody ul li .listNewTime .timeYear{
+	font-family: cursive;
+	font-size: 12px;
+	color:#F67C73;
+	text-align: center;
+}
+#listBody ul li a{
+	width:100%;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-decoration: none;
+	color:#666;
+	font-size: 14px;
+}
+#listBody ul li a:hover{
+	color:#0065b3;
+}
+#listBottomNav{
+	margin-top:20px;
+	padding-bottom: 10px;
+}
+#listBottomNav .listBottomNavWrap{
+	text-align: center;
+}
+#listBottomNav .listBottomNavWrap a{
+	text-decoration: none;
+	display: inline-block;
+	padding:5px 10px 5px 10px;
+	/*border:1px solid #a1a1a1;*/
+	background-color: #009688;
+	border-radius: 10px;
+	font-size: 14px;
+	color:white;
+}
+#listBottomNav .listBottomNavWrap a:hover{
+	background-color: #0F6961;
+}
+#listBottomNav .listBottomNavWrap span{
+	font-size: 12px;
+	color:#666;
+}

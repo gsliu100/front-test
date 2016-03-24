@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>经济信息工程学院</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/imageSlide.css">
+	<link rel="stylesheet" href="./css/news.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./statics/font-awesome/css/font-awesome.min.css">
+	<!-- jquery2.0以上不再支持ie9以下 -->
+	<script src="./statics/jquery-1.9.1.min.js"></script>
+	<script src="./js/nav.js"></script>
+	<!-- ie兼容html5语义标签 -->
+	<!--[if lt IE 10]>
+		<script src="./statics/html5shiv.min.js"></script>
+	<![endif]-->
+	<!-- 该站点最低支持ie8 -->
+	<!--[if lt IE 6]>
+		<script>
+			alert('你的浏览器版本太低，升级你的浏览器！');
+			document.location.href = 'http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html';
+		</script>
+	<![endif]-->
+</head>
+<body>
+	<!-- 导航条 -->
+	<header class="header">
+		<section class="topNav">
+			<section class="subNavWrap">
+				<div class="subNav">
+					<div class="mobileTog" id="mobileTog">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div>
+					<div class="rightSubNav">
+						<ul>
+							<li><a href="#">进入旧版</a></li>
+							<li><a href="#">西财首页</a></li>
+							<li><a href="#">网站地图</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="mobileNav" id="mobileNav">
+				<ul class="mobileSubNav">
+					<li><a href="#">进入旧版</a></li>
+					<li><a href="#">西财首页</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">English</a></li>
+				</ul>
+				<div class="mobileSearch">
+					<form action="#">
+						<input type="text" id="searchInput" placeholder="keywords...">
+						<button id="searchSubmit">Search</button>
+					</form>
+				</div>
+				<ul class="mobileMainNav">
+					<li>
+						<a href="#">学院概况<i class="fa fa-angle-down"></i></a>
+						<ul>
+							<li><a href="#">学院简介</a></li>
+							<li><a href="#">现任领导</a></li>
+							<li><a href="#">基层组织架构</a></li>
+							<li><a href="#">院长寄语</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">师资队伍<i class="fa fa-angle-down"></i></a>
+						<ul>
+							<li><a href="#">教授/博导</a></li>
+							<li><a href="#">副教授/硕士生导师</a></li>
+							<li><a href="#">讲师</a></li>
+							<li><a href="#">教辅及行政教师</a></li>
+							<li><a href="#">特聘讲座教授</a></li>
+						</ul>
+					</li>
+					<li><a href="#">科学研究<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">学生培养<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">对外交流<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">师生风采<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">在职教育<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">学院党建<i class="fa fa-angle-down"></i></a></li>
+					<li><a href="#">下载中心</a></li>
+				</ul>
+			</section>
+			<section class="schoolLogo">
+				<div class="logo">
+					<a href="#"><img src="./imgs/logo.png"></a>
+				</div>
+				<div class="search">
+					<form action="#">
+						<input type="text" id="searchInput" placeholder="keywords...">
+						<button id="searchSubmit">Search</button>
+					</form>
+				</div>
+			</section>
+		</section>
+		<section class="bigNav">
+			<section class="mainNavWrap">
+				<div class="mainNav">
+					<ul>
+						<li>
+							<a href="#">学院概况<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#">学院简介</a></li>
+								<li><a href="#">现任领导</a></li>
+								<li><a href="#">基层组织架构</a></li>
+								<li><a href="#">院长寄语</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">师资队伍<i class="fa fa-angle-down"></i></a>
+							<ul>
+								<li><a href="#">教授/博导</a></li>
+								<li><a href="#">副教授/硕士生导师</a></li>
+								<li><a href="#">讲师</a></li>
+								<li><a href="#">教辅及行政教师</a></li>
+								<li><a href="#">特聘讲座教授</a></li>
+							</ul>
+						</li>
+						<li><a href="#">科学研究<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">学生培养<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">对外交流<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">师生风采<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">在职教育<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">学院党建<i class="fa fa-angle-down"></i></a></li>
+						<li><a href="#">下载中心</a></li>
+					</ul>
+				</div>
+			</section>
+		</section>
+	</header>
+	<!--内容部分 -->
+	<section class="mainContent">
+		<!-- 滑动图片 -->
+		<section class="imageSlide">
+			<div class="imageSlideWrap">
+				<div class="go goLeft"><i class="fa fa-chevron-left"></i></div>
+				<div class="imageSlideDetail">
+					<section class="part">
+						<a href="#"><img src="./imgs/test.jpg" alt=""></a>
+						<div class="partTitle"><h3>测试测认识测试猜测和isceshi测试从色号icsehcsie</h3></div>
+						<div class="partAbstract">
+							<p>测试测认识测试猜测和isceshi测试从色号icsehcsie测试测认识测试猜测和isceshi测试从色号icsehcsie测试测认识测试猜测和isceshi测试从色号icsehcsie...</p>
+						</div>
+					</section>
+					<!-- <section class="part"></section>
+					<section class="part"></section>
+					<section class="part"></section> -->
+				</div>
+				<div class="go goRight"><i class="fa fa-chevron-right"></i></div>
+			</div>
+		</section>
+		<!-- 新闻通知 -->
+		<section class="news">
+			<div class="newsWrap">
+				<!-- 新闻 -->
+				<section class="newsDetail">
+					<h4>新闻聚焦<span><a href="">更多 ></a></span></h4>
+					<div class="newsListWrap">
+						<div class="new newOne">
+							<div class="newImage">
+								<a href="#"><img src="./imgs/test1.jpg"></a>
+							</div>
+							<div class="newAbstruct">
+								<h5><a href="#">金融创意奖</a></h5>
+								<p>大赛于2015年3月启动，全国56所高校的141支队伍（包括2支跨国队伍和8支跨校队伍）注册参赛，最终评出一等奖1个，二等奖2个，三等奖5个以及最佳金融创意奖、最佳技术实现奖。我校共有7支队伍参赛，历时8个月，经初赛、复赛的层层角逐，4支队伍</p>
+							</div>
+						</div>
+						<div class="new newTow">
+							<div class="newAbstruct">
+								<h5><a href="#">大赛是花旗（中国）公司</a></h5>
+								<p>花旗杯”金融创新应用大赛是花旗（中国）公司和旗下花旗金融信息服务（中国）有限公司联合北京大学、清华大学、复旦大学、南京大学、上海交通大学、武汉大学、西安交通大学、同济大学、四川大学、上海财经大学、西南财经大学等国内二十多所知名院校共同发</p>
+							</div>
+							<div class="newImage">
+								<a href="#"><img src="./imgs/test2.jpg"></a>
+							</div>
+						</div>
+						<div class="new newsList">
+							<ul>
+								<li><a href="#">是花旗（中国）公司和旗是花旗（中国）公司和旗</a></li>
+								<li><a href="#">、西安交通大学安交通大学安交通大学、</a></li>
+								<li><a href="#">下花旗金融信息服旗金融信息服旗金融信息服</a></li>
+								<li><a href="#">大学、西安交通武汉大学武汉大学大学</a></li>
+								<li><a href="#">、武汉大学、西安交通汉大学、西安交通汉大学、西安交通汉大学、西安交通</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- 通知学术 -->
+				<section class="newsDetail">
+					<div class="part2 notify">
+						<h4>通知公告<span><a href="">更多 ></a></span></h4>
+						<ul>
+							<li><a href="#">华大学、复旦大学、南京大学、上海交通大</a><span>[2016-1-1]</span></li>
+							<li><a href="#">霍伟东院长向各到访高校和单位介绍了我校及我院的</a><span>[2016-1-1]</span></li>
+							<li><a href="#">铭博士等教授的热情接待。霍伟东院长同李友仁</a><span>[2016-1-1]</span></li>
+							<li><a href="#">在静宜大学，霍伟东院长代表学院与静宜大学管理</a><span>[2016-1-1]</span></li>
+							<li><a href="#">霍院长一行还看望了今年7月到我校参加“‘团团’‘圆圆’故乡行对</a><span>[2016-1-1]</span></li>
+							<li><a href="#">等人热情接待了西南财经大学一行。霍伟东院长代表学院同大叶大</a><span>[2016-1-1]</span></li>
+						</ul>
+					</div>
+					<div class="part2 academic">
+						<h4>学术科研<span><a href="">更多 ></a></span></h4>
+						<div class="academicOne">
+							<a href="#"><img src="./imgs/test1.jpg"></a>
+							<div class="academicOneDetail">
+								<h5>西南财经大学专业同等学西南财经大</h5>
+								<p>西南财经大学专业同等学西南财经大学专业同等学西南财经大学专业同等学西南财经大学专业同等学西南财经大学专业同等学西南财经大学专业同等学</p>
+							</div>
+						</div>
+						<ul>
+							<li><a href="#">华大学、复旦大学、南京大学、上海交通大</a><span>[2016-1-1]</span></li>
+							<li><a href="#">霍伟东院长向各到访高校和单位介绍了我校及我院的</a><span>[2016-1-1]</span></li>
+							<li><a href="#">等人热情接待了西南财经大学一行。霍伟东院长代表学院同大叶大</a><span>[2016-1-1]</span></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+		</section>
+	</section>
+	<!-- 页脚 -->
+	<footer class="footer">
+		<div class="footerWrap">
+			<span>地址：四川成都温江柳台大道555号 通博楼B座 邮编：611130</span>
+			<span>电话：86-28-87092220 </span>
+			<span>邮箱：xxzz@swufe.edu.cn</span>
+			<p>版权所有 © 刘光胜 </p>
+		</div>
+	</footer>
+</body>
+</html>
