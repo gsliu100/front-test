@@ -27,10 +27,19 @@ body{
 }
 #myList li{
 	float:left;
+	position:relative;
 	width:150px;
 	height:150px;
 	overflow: hidden;
 	margin:0 8px 10px 8px;
+	top:0;
+	transition:all .5s ease-in-out;
+	-webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+}
+#myList li:hover{
+	top:-5px;
+	box-shadow: 0 0 10px 5px #e1e1e1;
 }
 #myList li img{
 	max-width: 100%;
