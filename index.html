@@ -16,7 +16,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body ng-app="myapp">
     <div class="top" ng-include="myjs/canvas-fly/index.html">
       
     </div>
@@ -40,7 +40,7 @@
       <section id="myContent">
           <h3 id="myTag">Demo List</h3>
 
-          <div id="listWrap" ng-app="myapp">
+          <div id="listWrap">
             <ul id="myList" ng-controller="loadDemo">
               <li ng-repeat="oneDemo in demos">
                 <a href="demo/{{oneDemo.indexDirectName}}/"><img src="myimages/{{oneDemo.imageName}}" alt="{{oneDemo.demoName}}"></a>
