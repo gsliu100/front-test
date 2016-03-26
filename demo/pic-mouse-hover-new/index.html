@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css3鼠标悬浮特效</title>
+<style type="text/css">
+*{
+	padding:0px;
+	margin:0px;
+}
+.one{
+	width:300px;
+	height:300px;
+	border:#999 1px solid;
+	margin: 0 auto;
+	margin-top:30px;
+}
+.effect1{
+	height:260px;
+	width:260px;
+	border:#999 1px solid;
+	margin:25px auto;
+	position:relative;
+}
+.effect1 a{
+	text-decoration:none;
+	color:white;
+}
+.effect1 .spanner{
+	width:240px;
+	height:240px;
+	border:#36F 10px solid;
+	border-left:#900 10px solid;
+	border-top:#900 10px solid;
+	-webkit-border-radius:100%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius;50%;
+	border-radius:50%;
+	-webkit-transition:all 0.8s ease-in-out;
+	-moz-transition:all 0.8s ease-in-out;
+	transition:all 0.8s ease-in-out;
+	-o-transition:all 0.8s ease-in-out;
+}
+.effect1 a:hover .spanner{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.effect1 .middle{
+	position:absolute;
+	width:241px;
+	height;241px;
+	top:11px;
+	left:11px;
+	overflow:hidden;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius;50%;
+	border-radius:50%;
+}
+.effect1 .discript{
+	position:absolute;
+	width:241px;
+	height:241px;
+	top:10px;
+	left:10px;
+	opacity:0;
+	text-align:center;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius;50%;
+	border-radius:50%;
+	border:#000 1px solid;
+	-webkit-transition:all 0.8s ease-in-out;
+	-moz-transition:all 0.8s ease-in-out;
+	transition:all 0.8s ease-in-out;
+	-o-transition:all 0.8s ease-in-out;
+}
+.effect1 a:hover .discript{
+	background-color:rgba(0,0,0,0.7);
+	opacity:0.7;
+}
+.effect1 .discript h3{
+	width:70%;
+	margin:80px auto;
+	margin-bottom:10px;
+	text-shadow:0 0 8px rgba(0,0,0,0.5);
+	border-bottom:#333 1px dotted;
+}
+
+
+
+.tow{
+	width:320px;
+	height:220px;
+	border:#666 1px solid;
+	margin: 0 auto;
+	margin-top:30px;
+	
+}
+
+.effect2{
+	height:200px;
+	width:300px;
+	border:#999 1px solid;
+	position:relative;
+	margin:10px auto;
+}
+.effect2 a{
+	text-decoration:none;
+	color:white;
+	display:block;
+	width:300px;
+	height:200px;
+}
+.effect2 .picture{
+	position:absolute;
+	width:300px;
+	height:200px;
+	left:0px;
+	top:0px;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+}
+.effect2 .picture img{
+	width:300px;
+	height:200px;
+}
+.effect2 a:hover .picture{
+	-webkit-transform:scale(0.5,0.5);
+}
+.effect2 .discript{
+	position:absolute;
+	width:300px;
+	height:200px;
+	left:0px;
+	top:0px;
+	background-color:#333;
+	z-index:-1;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	transition:all 0.5s ease-in-out;
+	-webkit-transform:scale(0.1,0.1);
+	-moz-transform:scale(0.1,0.1);
+	-ms-transform:scale(0.1,0.1);
+	-o-transform:scale(0.1,0.1);
+	transform:scale(0.1,0.1);
+}
+.effect2 a:hover .discript{
+	-webkit-transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-ms-transform:scale(1,1);
+	-o-transform:scale(1,1);
+	transform:scale(1,1);
+}
+.effect2 .discript h3{
+	padding:10px;
+}
+.effect2 .discript p{
+	margin-top:100px;
+	text-align:right;
+	padding-right:5px;
+}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="one">
+	      	<div class="effect1">
+	       		<a href="#">
+	              <div class="spanner"></div>
+	              <div class="middle"><img src="图片层叠展开/1.jpg" alt="Picture"/></div>
+	              <div class="discript">
+	                  <h3>The HeaderThe HeaderThe Header</h3>
+	                  <p>Some discripSome discripSome discrip</p>	
+				  </div>
+	       		</a>
+	        </div>
+	    </div>
+	    <div class="tow">
+	    	<div class="effect2">
+	        	<a href="#">
+	            	<div class="picture"><img src="图片层叠展开/9.jpg" /></div>
+	                <div class="discript">
+	                	<h3>The HeaderThe HeaderThe Header</h3>
+	                    <p>Some DiscriptSome DiscriptSome Discript</p>
+	                </div>
+	            </a>
+	        </div>
+	    </div>
+	</div>
+</body>
+</html>

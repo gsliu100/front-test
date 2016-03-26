@@ -27,6 +27,11 @@ mydata.factory('oriData',function(){
 			demoName:'tab-c',
 			indexDirectName:"tab-c",
 			imageName:"tab-c.PNG"
+		},
+		{
+			demoName:'pic-mouse-hover-new',
+			indexDirectName:"pic-mouse-hover-new",
+			imageName:"pic-mouse-hover-new.PNG"
 		}
 	]
 });
