@@ -22,6 +22,11 @@ mydata.factory('oriData',function(){
 			demoName:'responsive-test',
 			indexDirectName:"responsive-test",
 			imageName:"responsive-test.PNG"
+		},
+		{
+			demoName:'tab-c',
+			indexDirectName:"tab-c",
+			imageName:"tab-c.PNG"
 		}
 	]
 });

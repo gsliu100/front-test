@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tab切换</title>
+<style type="text/css">
+	*{
+		padding:0px;
+		margin:0px;
+		}
+	.main{
+		margin:50px auto;
+		width:394px;
+		height:150px;
+		border:#CCC 1px solid;
+		overflow:hidden;
+	}
+	.tab{
+		width:398px;
+		height:40px;
+		border-bottom:#CCC 1px solid;
+		position:relative;
+		left:-1px;
+	}
+	.tab ul{
+		list-style:none;
+	}
+	.tab ul li{
+		float:left;
+		width:78px;
+		height:40px;
+		line-height:40px;
+		background:#EEE;
+		text-align:center;
+		padding-left:1px;
+	}
+	.tab ul li a{
+		position:relative;
+		left:-1px;
+		display:block;
+		width:78px;
+		height:40px;
+		color:#999;
+		text-decoration:none;
+	}
+	.tab-hover{
+		color:#06C;
+		background:#FFF;
+		border-bottom:#FFF 1px solid;
+		border-left:#CCC 1px solid;
+		padding:0px;
+		border-right:#CCC 1px solid;
+	}
+	.new{
+		width:385px;
+		margin:5px auto;
+		overflow:hidden;
+		display:none;
+	}
+	.new ul{
+		list-style-position:inside;
+	}
+	.new ul li{
+		float:left;
+		margin:15px 46px;
+		width:100px;
+	}
+	.new ul li a{
+		color:#66F;
+		text-decoration:none;
+	}
+</style>
+</head>
+<body>
+	<div class="main">
+    	<div class="tab">
+        	<ul>
+            	<li>
+                	<a href="#" class="chos tab-hover">要闻1</a>
+                </li>
+                <li>
+                	<a href="#" class="chos">要闻2</a>
+                </li>
+                <li>
+                	<a href="#" class="chos">要闻3</a>
+                </li>
+                <li>
+                	<a href="#" class="chos">要闻4</a>
+                </li>
+                <li>
+                	<a href="#" class="chos">要闻5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="new new0">
+        	<ul>
+            	<li><a href="#">西财新闻1</a></li>
+                <li><a href="#">西财新闻1</a></li>
+                <li><a href="#">西财新闻1</a></li>
+                <li><a href="#">西财新闻1</a></li>
+            </ul>
+        </div>
+        <div class="new new1">
+        	<ul>
+            	<li><a href="#">西财新闻2</a></li>
+                <li><a href="#">西财新闻2</a></li>
+                <li><a href="#">西财新闻2</a></li>
+                <li><a href="#">西财新闻2</a></li>
+            </ul>
+        </div>
+        <div class="new new2">
+        	<ul>
+            	<li><a href="#">西财新闻3</a></li>
+                <li><a href="#">西财新闻3</a></li>
+                <li><a href="#">西财新闻3</a></li>
+                <li><a href="#">西财新闻3</a></li>
+            </ul>
+        </div>
+        <div class="new new3">
+        	<ul>
+            	<li><a href="#">西财新闻4</a></li>
+                <li><a href="#">西财新闻4</a></li>
+                <li><a href="#">西财新闻4</a></li>
+                <li><a href="#">西财新闻4</a></li>
+            </ul>
+        </div>
+       <div class="new new4">
+        	<ul>
+            	<li><a href="#">西财新闻5</a></li>
+                <li><a href="#">西财新闻5</a></li>
+                <li><a href="#">西财新闻5</a></li>
+                <li><a href="#">西财新闻5</a></li>
+            </ul>
+        </div>
+    </div>
+<script>
+	var curn=document.getElementsByClassName("new0")[0];
+	var curt=document.getElementsByClassName("chos")[0];
+	curn.style.display="block";
+    var tab=document.getElementsByClassName("chos");
+	for(var i=0;i<tab.length;i++){
+		//将i作为tab[i]自定义的属性num的值
+		tab[i].num=i;
+		tab[i].onmouseover=function(e){
+			e.stopPropagation();
+			curt.className="chos";
+			this.className="chos tab-hover";
+			curt=this;
+			curn.style.display="none";
+/*			for(var j=0;j<tab.length;j++){
+				if(this==tab[j])
+				    var s="new"+j;
+				}*/
+			var s="new"+this.num;
+			curn=document.getElementsByClassName(s)[0];
+			curn.style.display="block";
+			};
+		tab[i].onmouseout=function(i){
+			this.className="chos";
+/*			for(var j=0;j<tab.length;j++){
+				if(this==tab[j])
+				    var s="new"+j;
+				}*/
+			var s="new"+this.num;
+			curn=document.getElementsByClassName(s)[0];
+			curn.style.display="none";
+			};
+		}
+		window.onmouseover=function(){
+			curt.className="chos tab-hover";
+			curn.style.display="block";
+			}
+</script>
+</body>
+</html>
