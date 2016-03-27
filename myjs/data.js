@@ -32,6 +32,11 @@ mydata.factory('oriData',function(){
 			demoName:'pic-mouse-hover-new',
 			indexDirectName:"pic-mouse-hover-new",
 			imageName:"pic-mouse-hover-new.PNG"
+		},
+		{
+			demoName:'css3-bowen',
+			indexDirectName:"css3-bowen",
+			imageName:"css3-bowen.PNG"
 		}
 	]
 });
