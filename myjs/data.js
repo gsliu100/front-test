@@ -37,6 +37,11 @@ mydata.factory('oriData',function(){
 			demoName:'css3-bowen',
 			indexDirectName:"css3-bowen",
 			imageName:"css3-bowen.PNG"
+		},
+		{
+			demoName:'css3-transition',
+			indexDirectName:"css3-transition",
+			imageName:"css3-transition.PNG"
 		}
 	]
 });
