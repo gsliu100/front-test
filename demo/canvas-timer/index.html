@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="300px" height="300px" style="background-color:#f1f1f1;margin:50px auto;display: block"></canvas>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		
+
+		function theDote(){
+			var time = new Date();
+			context.globalCompositeOperation = 'destination-over';
+			context.clearRect(0,0,300,300);	
+			context.save();
+			// 旋转的参照点位于canvas的左上角，应用位移后该参照点会跟着移动
+			context.translate(150,150);
+			
+			// 绘制小时
+			context.save();
+			context.beginPath();
+			context.rotate((time.getHours()%12*30-90)*Math.PI/180 + time.getMinutes()/60*30*Math.PI/180);
+			context.translate(35,0);
+			context.arc(0,0,6,2*Math.PI,false);
+			context.strokeStyle = '#009688';
+			context.stroke();
+			context.restore();
+			// 绘制分
+			context.save();
+			context.beginPath();
+			context.rotate((time.getMinutes()%60*6-90)*Math.PI/180 + time.getSeconds()/60*6*Math.PI/180);
+			context.translate(55,0);
+			context.arc(0,0,4,2*Math.PI,false);
+			context.strokeStyle = 'blue';
+			context.stroke();
+			context.restore();
+
+			// 绘制秒
+			context.beginPath();
+			context.rotate((time.getSeconds()*6-90)*Math.PI/180+time.getMilliseconds()/1000*6*Math.PI/180);
+			// rotate会影响translate的移动方向
+			context.translate(100,0)
+			context.rect(-25,-25,50,50);
+			context.fillStyle = '#F44336';
+			context.fill();
+			// 毫秒
+			context.save();
+			context.beginPath();
+			context.rotate((time.getSeconds()%5)*72*Math.PI/180+time.getMilliseconds()/1000*72*Math.PI/180);
+			// 前边设置好的translate,rotate会影响后边的布局
+			context.translate(40,0);
+			context.arc(0,0,10,2*Math.PI,false);
+			context.fillStyle = '#009688';
+			context.fill();
+
+			context.restore();
+			context.restore();
+			// 绘制中心
+			context.beginPath();
+			context.arc(150,150,3,2*Math.PI,false);
+			context.fillStyle = '#FF5722';
+			context.fill();
+			
+			// 绘制秒的轨道
+			context.beginPath();
+			context.arc(150,150,102,2*Math.PI,false);
+			context.strokeStyle = '#795548';
+			context.stroke();
+			// 文字
+			context.beginPath();
+			context.fillStyle = '#FF5722';
+			context.fillText(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds(),10,270);
+			window.requestAnimationFrame(theDote);
+		}
+		theDote();
+	</script>
+</body>
+</html>

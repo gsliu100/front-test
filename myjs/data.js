@@ -42,6 +42,11 @@ mydata.factory('oriData',function(){
 			demoName:'css3-transition',
 			indexDirectName:"css3-transition",
 			imageName:"css3-transition.PNG"
+		},
+		{
+			demoName:'canvas-timer',
+			indexDirectName:"canvas-timer",
+			imageName:"canvas-timer.PNG"
 		}
 	]
 });
