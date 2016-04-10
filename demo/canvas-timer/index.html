@@ -73,7 +73,7 @@
 			// 文字
 			context.beginPath();
 			context.fillStyle = '#FF5722';
-			context.fillText(time.getHours()+":"+time.getMinutes()+":"+time.getSeconds(),10,270);
+			context.fillText((time.getHours()<10?"0"+time.getHours():time.getHours())+":"+(time.getMinutes()<10?"0"+time.getMinutes():time.getMinutes())+":"+(time.getSeconds()<10?"0"+time.getSeconds():time.getSeconds()),10,270);
 			window.requestAnimationFrame(theDote);
 		}
 		theDote();
