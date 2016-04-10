@@ -25,6 +25,8 @@
 			context.rotate((time.getHours()%12*30-90)*Math.PI/180 + time.getMinutes()/60*30*Math.PI/180);
 			context.translate(35,0);
 			context.arc(0,0,6,2*Math.PI,false);
+			context.moveTo(-33,0);
+			context.lineTo(-6,0);
 			context.strokeStyle = '#009688';
 			context.stroke();
 			context.restore();
@@ -34,6 +36,8 @@
 			context.rotate((time.getMinutes()%60*6-90)*Math.PI/180 + time.getSeconds()/60*6*Math.PI/180);
 			context.translate(55,0);
 			context.arc(0,0,4,2*Math.PI,false);
+			context.moveTo(-53,0);
+			context.lineTo(-4,0);
 			context.strokeStyle = 'blue';
 			context.stroke();
 			context.restore();
