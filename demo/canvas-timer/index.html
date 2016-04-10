@@ -39,6 +39,7 @@
 			context.restore();
 
 			// 绘制秒
+			context.save();
 			context.beginPath();
 			context.rotate((time.getSeconds()*6-90)*Math.PI/180+time.getMilliseconds()/1000*6*Math.PI/180);
 			// rotate会影响translate的移动方向
@@ -46,8 +47,7 @@
 			context.rect(-25,-25,50,50);
 			context.fillStyle = '#F44336';
 			context.fill();
-			// 毫秒
-			context.save();
+			// 毫秒	
 			context.beginPath();
 			context.rotate((time.getSeconds()%5)*72*Math.PI/180+time.getMilliseconds()/1000*72*Math.PI/180);
 			// 前边设置好的translate,rotate会影响后边的布局
@@ -55,8 +55,9 @@
 			context.arc(0,0,10,2*Math.PI,false);
 			context.fillStyle = '#009688';
 			context.fill();
-
 			context.restore();
+
+			// 恢复到没有变换之前
 			context.restore();
 			// 绘制中心
 			context.beginPath();
