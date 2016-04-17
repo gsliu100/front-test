@@ -110,7 +110,7 @@
 					left = 300;
 				}
 				that.style.left = (left-8)+'px';
-				that.style.top = (top-y-8)+'px';
+				that.style.top = (top-8)+'px';
 				// 将位置信息保存至point1
 				point1.x = left;
 				point1.y = top;
