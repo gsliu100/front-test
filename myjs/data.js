@@ -51,7 +51,7 @@ mydata.factory('oriData',function(){
 		{
 			demoName:'my-calendar',
 			indexDirectName:"my-calendar",
-			imageName:"calendar.PNG"
+			imageName:"calendar.png"
 		}
 	]
 });
