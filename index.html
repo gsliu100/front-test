@@ -59,7 +59,13 @@
           var mySlides = document.getElementsByClassName('mySlide');
           var myList = document.getElementById('myList');
           var lis = myList.children.length;
-          var lineNumbers = Math.ceil(lis/3);
+          var lineNumbers = 0;
+          if((navigator.userAgent.indexOf('Android') == -1 && navigator.userAgent.indexOf('iPhone') == -1)){
+              lineNumbers = Math.ceil(lis/3)
+          }else{
+              lineNumbers = Math.ceil(lis/2);
+          }
+          console.log(navigator.userAgent);
           console.log(lineNumbers);
           mySlides[0].addEventListener('click',function(){
               var cTop = parseInt(myList.style.top);
@@ -70,7 +76,8 @@
           });
           mySlides[1].addEventListener('click',function(){
               var cTop = parseInt(myList.style.top);
-              if(cTop >= 0 && cTop < (lineNumbers-3)*160){
+              console.log(cTop);
+              if(cTop > -(lineNumbers-3)*160){
                 cTop = cTop - 160;
                 myList.style.top = cTop + 'px';
               }    

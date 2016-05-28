@@ -27,12 +27,14 @@ body{
 	height:480px;
 	overflow: hidden;
 	position:relative;
+	width:100%;
 }
 #myList{
 	list-style: none;
 	padding:0;
 	// padding-top:20px;
 	margin:0;
+	width:100%;
 	// overflow: hidden;
 	position: absolute;
 	transition:all .5s ease;
@@ -42,7 +44,7 @@ body{
 #myList li{
 	float:left;
 	position:relative;
-	width:150px;
+	width:30%;
 	height:150px;
 	overflow: hidden;
 	margin:10px 8px 0px 8px;
@@ -113,4 +115,16 @@ header{
 }
 #myMore .mySlide:last-child{
 		float: right;
+}
+
+@media print, screen and (max-width: 960px){
+	header{
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 720px){
+	#myList li{
+		width:45%;
+	}
 }
