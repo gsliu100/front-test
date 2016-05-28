@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历</title>
+	<!-- 引入myC.css文件 -->
+	<link rel="stylesheet" href="css/myC.css">
+	<!-- 引入myC.js文件 -->
+	<script src="js/myC.js"></script>
+	<style>	
+		#myRili{
+			font-family: Arial,sans-serif;
+			width:300px;
+			color:#666;
+		}
+
+		#youChoose{
+			line-height: 35px;
+			border-top:1px solid #999;
+			color:#666;
+		}
+	</style>
+</head>
+<body>
+<!-- 日历会添加到id为myRili的元素中 -->
+	<div id="myRili">
+		
+	</div>
+	<span id="youChoose"></span>
+	<script>
+
+		myC('#4CAF50','#4CAF50','#F44336',function(cDate){
+
+			document.getElementById('youChoose').innerHTML = (cDate.year+'-'+cDate.month+'-'+cDate.date);
+
+		});
+
+		// myC(color1,color2,color3,changeListener)
+		// color1为头部背景色
+		// color2为星期字体颜色
+		// color3为选中背景色
+		// changeListener为用户改变日期是执行的函数，接收一个对象参数cDate
+		// cDate包含year,month,date属性用于获取用户选择的日期信息
+	</script>
+</body>
+</html>

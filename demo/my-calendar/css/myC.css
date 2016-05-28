@@ -1,0 +1,57 @@
+
+body,html,tr,td,table,span,div{
+	padding:0;
+	margin:0;
+}
+#cMyTable{
+	width:100%;
+	height:100%;
+}
+#cMyTable tr td{
+	padding:5px;
+	text-align: center;
+	transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+}
+#cMyTable tr td#choosedDay{
+	background-color:#009688;
+	color:white;
+}
+#cMyTable tr td.haveDate{
+	cursor: pointer;
+}
+#cMyTable tr td.haveDate:hover{
+	background-color: #999!important;
+	color:white!important;
+}
+#cHeader{
+	height:35px;
+	width:100%;
+	line-height: 35px;
+	text-align: center;
+	color:white;
+	background-color:#009688;
+}
+#cHeader #cYear,#cHeader #cMonth,#cHeader #cGoLeft,#cHeader #cGoRight{
+	display: inline-block;
+	position:relative;
+}
+#cHeader #cYear,#cHeader #cMonth{
+	padding:0 10px 0 10px;
+}
+#cHeader #cGoLeft,#cHeader #cGoRight{
+	transition:all .5s ease;
+	-webkit-transition:all .5s ease;
+	width:35px;
+	cursor: pointer;
+	margin:0 10px 0 10px;
+}
+#cHeader #cGoLeft:hover,#cHeader #cGoRight:hover{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#headerTR{
+	color:#038478;
+}
+
