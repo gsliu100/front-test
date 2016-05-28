@@ -8,6 +8,7 @@ body{
 #myContent{
 	margin-top:0;
 	padding-left:0;
+	padding-bottom:10px;
 }
 
 #myContent #myTag{
@@ -22,14 +23,21 @@ body{
 	// border-bottom: 2px solid red;
 	// overflow: hidden;
 	// box-shadow: 0 2px 2px 2px red;
+	border-bottom: 1px solid #E0E0E0;
+	height:480px;
+	overflow: hidden;
+	position:relative;
 }
 #myList{
 	list-style: none;
 	padding:0;
-	padding-top:20px;
+	// padding-top:20px;
 	margin:0;
-	overflow: hidden;
-	border-bottom: 1px solid #E0E0E0;
+	// overflow: hidden;
+	position: absolute;
+	transition:all .5s ease;
+	// top:-23px;
+	// border-bottom: 1px solid #E0E0E0;
 }
 #myList li{
 	float:left;
@@ -37,7 +45,7 @@ body{
 	width:150px;
 	height:150px;
 	overflow: hidden;
-	margin:0 8px 10px 8px;
+	margin:10px 8px 0px 8px;
 	top:0;
 	transition:all .5s ease-in-out;
 	-webkit-transition:all .5s ease-in-out;
@@ -83,4 +91,26 @@ footer{
 }
 header{
 	text-align: center;
+}
+
+
+#myMore{
+	// text-align: center;
+}
+#myMore .mySlide{
+	padding:10px;
+	cursor: pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
+#myMore .mySlide:hover{
+	color:#4CAF50;
+}
+#myMore .mySlide:first-child{
+		float: left;
+}
+#myMore .mySlide:last-child{
+		float: right;
 }

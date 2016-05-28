@@ -47,6 +47,11 @@ mydata.factory('oriData',function(){
 			demoName:'canvas-timer',
 			indexDirectName:"canvas-timer",
 			imageName:"canvas-timer.PNG"
+		},
+		{
+			demoName:'my-calendar',
+			indexDirectName:"my-calendar",
+			imageName:"calendar.PNG"
 		}
 	]
 });
